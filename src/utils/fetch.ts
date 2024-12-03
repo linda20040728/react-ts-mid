@@ -3,6 +3,7 @@
  * @param api 要呼叫的api
  * @returns json 結果
  */
+
 export async function asyncGet(api: string):Promise<any>{
     try {
         const res: Response = await fetch(api)
