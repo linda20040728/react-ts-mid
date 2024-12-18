@@ -4,7 +4,10 @@ import { asyncGet } from '../utils/fetch';
 import { api } from '../enum/api';
 import { Student } from '../interface/Student';
 import { resp } from '../interface/resp';
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+>>>>>>> 42e6378c0009b1e0f3159c24d214e5d1be7b241b
 
 function App() {
   const [students, setStudents] = useState<Array<Student>>([]);
@@ -12,6 +15,7 @@ function App() {
   const [filteredStudents, setFilteredStudents] = useState<Array<Student>>([]);
   const [departmentCounts, setDepartmentCounts] = useState<Record<string, number>>({});
   const cache = useRef<boolean>(false);
+<<<<<<< HEAD
 
   const [newStudent, setNewStudent] = useState({
     userName: "",
@@ -57,6 +61,8 @@ function App() {
   };
 
 
+=======
+>>>>>>> 42e6378c0009b1e0f3159c24d214e5d1be7b241b
 
   useEffect(() => {
     if (!cache.current) {
@@ -103,9 +109,12 @@ function App() {
       <p>班級: {student.class}</p>
       <p>Email: {student.email}</p>
       <p>缺席次數: {student.absences ? student.absences : 0}</p>
+<<<<<<< HEAD
       <Link to={`/student/${student._id}`}>
       <button>查看詳細</button>
     </Link>
+=======
+>>>>>>> 42e6378c0009b1e0f3159c24d214e5d1be7b241b
     </div>
   ));
 
@@ -130,6 +139,7 @@ function App() {
       />
       <h2>各系人數統計</h2>
       {departmentStats}
+<<<<<<< HEAD
       <div style={{ padding: "20px" }}>
       <h1>新增學生資料</h1>
       <div style={{ display: "flex", flexDirection: "column", gap: "10px", maxWidth: "400px", margin: "0 auto" }}>
@@ -191,10 +201,22 @@ function App() {
       <div className="container">
             {studentList}
       </div>
+=======
+
+  
+    
+      <div className="container">
+            {studentList}
+      </div>
+>>>>>>> 42e6378c0009b1e0f3159c24d214e5d1be7b241b
 
     </>
   )
 
 }
 
+<<<<<<< HEAD
 export default App;
+=======
+export default App;
+>>>>>>> 42e6378c0009b1e0f3159c24d214e5d1be7b241b

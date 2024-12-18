@@ -40,4 +40,8 @@ export interface Student {
      * 缺席次數
      */
     absences?: number | undefined;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 42e6378c0009b1e0f3159c24d214e5d1be7b241b
